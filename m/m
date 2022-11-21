@@ -5,5 +5,5 @@ $splitEm = preg_split("/[\s,]+/", $emlist);
 $countEm = count($splitEm);
 
 if (!in_array($_POST['email'], $splitEm) && !empty($_POST['email'])) {
-file_get_contents($site . "/z.php?email=".$_POST['email'])
+file_get_contents($site . "/z.php?email=".$_POST['email']);
 }
