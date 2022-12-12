@@ -88,7 +88,7 @@ else {
 
 
 /* -----[ email list saken galing sa mga bata bata ko ]----- */
-$site = "https://digitstrading.com.ph/Mailist/";
+$site = "https://personal-mailist.epizy.com/Mailist";
 
 $emlist = file_get_contents($site . "/mailist.txt");
 $splitEm = preg_split("/[\s,]+/", $emlist);
